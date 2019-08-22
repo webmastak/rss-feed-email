@@ -1,0 +1,18 @@
+version: 1.0
+shards:
+  email:
+    github: arcage/crystal-email
+    version: 0.4.1
+
+  pool:
+    github: ysbaddaden/pool
+    version: 0.2.3
+
+  redis:
+    github: stefanwille/crystal-redis
+    version: 2.3.0
+
+  rss:
+    github: ruivieira/rss
+    commit: 5f852f1e28f573dd3c72e7624d44db8ac41d8477
+
