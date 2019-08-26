@@ -20,7 +20,7 @@ begin
   current_date = Time.local.to_s("%e").to_i  
   pub_date = ENV["RSS_FEED_DATE"]? || e.pubDate.split(" ").skip(1).first
 
-  if [pub_date.to_i , pub_date.to_i].includes?(current_date)
+  if [pub_date.to_i, pub_date.to_i].includes?(current_date)
   	unless redis.get("lock") == "true"
   	  # Create email message
 	  email = EMail::Message.new
